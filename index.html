@@ -1,18 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Travel Blog</title>
     <style>
-        body { font-family: Arial; margin: 40px; background: #f7f7f7; }
-        h1 { color: #333; }
-        .post { background: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        /* Header */
+        header {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.3rem;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Blog Section */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .post h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Travel Blog</h1>
-    <div class="post">
-        <h2>My First Post</h2>
-        <p>This is my first travel blog post!</p>
+
+    <header>
+        <h1>My Travel Blog</h1>
+        <p>Exploring the world, one trip at a time</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="post">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Beach" />
+            <h2>Exploring Bali</h2>
+            <p>
+                Bali is a tropical paradise known for its stunning beaches, vibrant culture,
+                and lush landscapes. From the rice terraces of Ubud to the beaches of Seminyak,
+                every corner has something magical to offer.
+            </p>
+        </div>
+
+        <div class="post">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Mountains" />
+            <h2>Hiking the Swiss Alps</h2>
+            <p>
+                The Swiss Alps offer some of the most breathtaking landscapes in the world.
+                Crystal-clear lakes, snow-covered peaks, and beautiful trails make it a hiker's dream.
+            </p>
+        </div>
+
+        <div class="post">
+            <img src="https://images.unsplash.com/photo-1529927066849-6ec6d91e1f5c" alt="City" />
+            <h2>A Weekend in Tokyo</h2>
+            <p>
+                Tokyo is a perfect blend of tradition and modernity. From ancient temples to futuristic skyscrapers,
+                the city never fails to amaze.
+            </p>
+        </div>
     </div>
+
+    <footer>
+        <p>© 2025 My Travel Blog. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
