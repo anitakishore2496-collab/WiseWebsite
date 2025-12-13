@@ -1,53 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Wise Sphere</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <title>The Wise Sphere | Travel Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Wise Sphere is a travel blog sharing road trips, destinations, and experiences from around the world." />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: #1f3c88;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url("assets/uploads/hero.jpg") center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #1f3c88;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1f3c88;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
+
 <body>
-<header>
-<div class="container">
-<img src="assets/images/logo.png" alt="WiseSphere Logo" class="logo">
-<h1>The Wise Sphere</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="destinations.html">Destinations</a>
-</nav>
-</div>
-</header>
-<section class="hero">
-<img src="assets/images/hot-springs.jpg" alt="Hot Springs Trip">
-<div class="hero-text">
-<h2>Dallas to Hot Springs Road Trip</h2>
-<p>Explore the natural beauty, hidden gems, and unforgettable adventures on this scenic journey.</p>
-<a href="blog/dallas-hot-springs.html" class="btn">Read More</a>
-</div>
-</section>
-<section class="featured-destinations">
-<h2>Other Destinations</h2>
-<div class="cards">
-<div class="card">
-<img src="assets/images/denver.jpg" alt="Denver Trip">
-<h3>Denver Road Trip</h3>
-<a href="blog/denver-road-trip.html" class="btn">Read More</a>
-</div>
-<div class="card">
-<img src="assets/images/nashville.jpg" alt="Nashville Trip">
-<h3>Nashville Adventure</h3>
-<a href="blog/nashville-trip.html" class="btn">Read More</a>
-</div>
-<div class="card">
-<img src="assets/images/yosemite.jpg" alt="Yosemite Trip">
-<h3>Yosemite Exploration</h3>
-<a href="blog/yosemite-trip.html" class="btn">Read More</a>
-</div>
-</div>
-</section>
-<footer>
-&copy; 2025 The Wise Sphere. All rights reserved.
-</footer>
+
+  <header>
+    <h1>The Wise Sphere</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="#trips">Trips</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Travel Smart. Travel Deep.</h1>
+  </section>
+
+  <div class="container">
+
+    <section class="intro" id="about">
+      <h2>Welcome to The Wise Sphere</h2>
+      <p>
+        The Wise Sphere is a travel blog focused on meaningful journeys, road trips,
+        hidden destinations, and real experiences. From weekend getaways to long
+        adventures, this is where stories meet exploration.
+      </p>
+    </section>
+
+    <section id="trips">
+      <h2>Featured Trips</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="assets/uploads/hot-springs.jpg" alt="Dallas to Hot Springs Road Trip">
+          <div class="card-content">
+            <h3>Dallas to Hot Springs Road Trip</h3>
+            <p>A scenic journey filled with nature, relaxation, and small-town charm.</p>
+            <a href="/blog/dallas-hot-springs.html">Read More →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/uploads/denver.jpg" alt="Denver Road Trip">
+          <div class="card-content">
+            <h3>Denver Adventure</h3>
+            <p>Mountains, city life, and unforgettable landscapes.</p>
+            <a href="/blog/denver-road-trip.html">Read More →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/uploads/yosemite.jpg" alt="Yosemite Trip">
+          <div class="card-content">
+            <h3>Yosemite Exploration</h3>
+            <p>National parks, hiking trails, and breathtaking views.</p>
+            <a href="/blog/yosemite-trip.html">Read More →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 The Wise Sphere. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
