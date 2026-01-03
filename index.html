@@ -2,21 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Case Study 1</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Case Study Site</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Case Study 1</h1>
-  <p>This is where you write your case study content.
-Hello my name is HAHA</p>
 
-  <!-- Buy Tool for this Case Study -->
-  <h2>Buy the Tool</h2>
-  <!-- Example: PayPal Button -->
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
-    <input type="submit" value="Buy Now">
-  </form>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">CaseStudyHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-light py-5 text-center">
+  <div class="container">
+    <h1 class="display-4">Welcome to CaseStudyHub</h1>
+    <p class="lead">Explore in-depth case studies and find tools to implement them.</p>
+    <a href="case-studies.html" class="btn btn-primary btn-lg">Explore Case Studies</a>
+    <a href="products.html" class="btn btn-outline-primary btn-lg">Shop Tools</a>
+  </div>
+</section>
+
+<!-- Featured Case Studies -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Featured Case Studies</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/case1.png" class="card-img-top" alt="Case Study 1">
+          <div class="card-body">
+            <h5 class="card-title">Case Study 1</h5>
+            <p class="card-text">A short description of this case study goes here.</p>
+            <a href="case1.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/case2.png" class="card-img-top" alt="Case Study 2">
+          <div class="card-body">
+            <h5 class="card-title">Case Study 2</h5>
+            <p class="card-text">A short description of this case study goes here.</p>
+            <a href="case2.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/case3.png" class="card-img-top" alt="Case Study 3">
+          <div class="card-body">
+            <h5 class="card-title">Case Study 3</h5>
+            <p class="card-text">A short description of this case study goes here.</p>
+            <a href="case3.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Google Ad Placeholder -->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h2>Sponsored</h2>
+    <!-- Paste your Google AdSense code here -->
+    <div class="border p-3">
+      Your Google AdSense code will go here
+    </div>
+  </div>
+</section>
+
+<!-- Featured Product -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Featured Tool</h2>
+    <div class="card mb-4 shadow-sm" style="max-width: 400px; margin: auto;">
+      <img src="images/product1.jpg" class="card-img-top" alt="Tool">
+      <div class="card-body text-center">
+        <h5 class="card-title">Tool Name</h5>
+        <p class="card-text">Brief description of your tool/product.</p>
+        <!-- Sample PayPal Button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+          <input type="submit" value="Buy Now" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4">
+  <p>&copy; 2026 CaseStudyHub. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
