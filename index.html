@@ -1,111 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CaseStudyHub</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Productivity Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS stylesheet here -->
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="#">CaseStudyHub</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <h1>Your Brand</h1> <!-- You can replace this with your actual logo -->
     </div>
-  </div>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#resources">Free Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="cta-btn">Get Your Free Planner</button>
+</header>
 
-<!-- Hero Section -->
-<section class="bg-light py-5 text-center">
-  <div class="container">
-    <h1 class="display-4">Explore In-Depth Case Studies</h1>
-    <p class="lead">Learn from real examples and get the tools to implement them.</p>
-    <a href="case-studies.html" class="btn btn-primary btn-lg me-2">View Case Studies</a>
-    <a href="products.html" class="btn btn-outline-primary btn-lg">Shop Tools</a>
-  </div>
+<!-- Hero Section (Above the Fold) -->
+<section id="hero">
+    <div class="hero-text">
+        <h2>Master Your School Life with Proven Productivity Hacks</h2>
+        <p>Get study tips, time management tools, and motivation to crush your high school goals.</p>
+        <button class="cta-btn">Start Here</button>
+    </div>
 </section>
 
-<!-- Featured Case Studies -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-4">Featured Case Studies</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <img src="images/case1.png" class="card-img-top" alt="Case Study 1">
-          <div class="card-body">
-            <h5 class="card-title">Case Study 1</h5>
-            <p class="card-text">Brief description of the first case study.</p>
-            <a href="case1.html" class="btn btn-primary">Read More</a>
-          </div>
+<!-- Main Content Section (Featured Products) -->
+<section id="main-content">
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="study-planner.jpg" alt="Study Planner">
+            <h3>Study Planner</h3>
+            <p>Stay organized with a simple, effective digital planner.</p>
+            <button class="cta-btn">Buy Now</button>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <img src="images/case2.png" class="card-img-top" alt="Case Study 2">
-          <div class="card-body">
-            <h5 class="card-title">Case Study 2</h5>
-            <p class="card-text">Brief description of the second case study.</p>
-            <a href="case2.html" class="btn btn-primary">Read More</a>
-          </div>
+        <div class="product-item">
+            <img src="productivity-course.jpg" alt="Productivity Course">
+            <h3>Productivity Course</h3>
+            <p>Learn the techniques that top students use to manage their time and stay focused.</p>
+            <button class="cta-btn">Enroll Now</button>
         </div>
-      </div>
+        <div class="product-item">
+            <img src="study-guide.jpg" alt="Study Guide">
+            <h3>Study Guide</h3>
+            <p>Download this step-by-step guide to acing your exams.</p>
+            <button class="cta-btn">Get the Guide</button>
+        </div>
     </div>
-  </div>
 </section>
 
-<!-- Google Ad Placeholder -->
-<section class="py-5 bg-light text-center">
-  <div class="container">
-    <h2>Sponsored</h2>
-    <div class="border p-3">
-      <!-- Paste your Google AdSense code here -->
-      Your Google Ad will appear here
+<!-- Blog Section -->
+<section id="blog">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-posts">
+        <div class="blog-post">
+            <h3>How to Stop Procrastinating Before Exams</h3>
+            <p>Learn strategies to overcome procrastination and get your work done on time.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>5 Time Management Tips for Busy Students</h3>
+            <p>Learn how to balance schoolwork, extracurriculars, and life with these simple tips.</p>
+            <a href="#">Read More</a>
+        </div>
     </div>
-  </div>
 </section>
 
-<!-- Featured Product -->
-<section class="py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">Featured Tool</h2>
-    <div class="card mx-auto shadow-sm" style="max-width: 400px;">
-      <img src="images/product1.jpg" class="card-img-top" alt="Tool">
-      <div class="card-body">
-        <h5 class="card-title">Tool Name</h5>
-        <p class="card-text">Brief description of your tool or product.</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
-          <input type="submit" value="Buy Now" class="btn btn-primary">
-        </form>
-      </div>
+<!-- Free Resources Section -->
+<section id="free-resources">
+    <h2>Free Resources</h2>
+    <p>Download your free study planner and start organizing your school day like a pro!</p>
+    <button class="cta-btn">Download Now</button>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Students Are Saying</h2>
+    <div class="testimonial">
+        <p>"This planner helped me stay on track for my finals. I felt more organized and less stressed!"</p>
+        <p>- Jane, High School Senior</p>
     </div>
-  </div>
+    <div class="testimonial">
+        <p>"The productivity course was a game-changer! It taught me how to manage my time better and actually get things done."</p>
+        <p>- Alex, High School Junior</p>
+    </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-primary text-white text-center py-4">
-  <p>&copy; 2026 CaseStudyHub. All rights reserved.</p>
+<footer>
+    <div class="footer-links">
+        <a href="#about">About</a> | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
+    </div>
+    <div class="social-media">
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Pinterest</a>
+    </div>
+    <p>&copy; 2026 Your Brand. All Rights Reserved.</p>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
